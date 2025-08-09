@@ -1,0 +1,39 @@
+{
+  "name": "inventario-simple",
+  "version": "1.0.0",
+  "description": "Sistema de inventarios simplificado con Node.js, Express y MongoDB (Personalizado por Steven)",
+  "main": "backend/src/index.js",
+  "scripts": {
+    "start": "node backend/src/index.js",
+    "dev": "nodemon backend/src/index.js",
+    "server": "node backend/src/app.js",
+    "server:dev": "nodemon backend/src/app.js",
+    "create-admin": "node backend/scripts/crear-admin.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "inventario",
+    "nodejs",
+    "express",
+    "mongodb",
+    "crud"
+  ],
+  "author": "Steven",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "jest": "^30.0.4",
+    "nodemon": "^3.0.2",
+    "supertest": "^7.1.3"
+  }
+}
